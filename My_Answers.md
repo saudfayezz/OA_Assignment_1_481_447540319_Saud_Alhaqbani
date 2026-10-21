@@ -1,11 +1,10 @@
 # My Answers - Assignment 1 (CFLP: VNS vs Gurobi)
 
 **Student Information:**
-- **Student ID:** ___________________________
-- **Student Name:** ___________________________
-- **Gurobi Version Used:** [ ] Academic [ ] Free
-- **Date Completed:** ___________________________
-
+- **Student ID:** 447540319
+- **Student Name:** Saud Fayez Abdullah Alhaqbani
+- **Gurobi Version Used:** [✓] Academic [ ] Free
+- **Date Completed:** 2026-10-21
 ---
 
 ## Section A: Solution Quality Analysis (4 marks)
@@ -14,7 +13,28 @@
 
 **Analysis of Plot 01:**
 
-[Your answer here - analyze gap patterns by size and difficulty]
+[### A.1 Gap Breakdown by Instance Size and Difficulty
+- **Small Instances:**
+  * Easy: Mean Gap ≈ 9.86%, Median ≈ 8.87%
+  * Moderate: Mean Gap ≈ 16.25%, Median ≈ 16.35%
+  * Expensive: Mean Gap ≈ 12.28%, Median ≈ 12.76%
+
+- **Medium Instances:**
+  * Easy: Mean Gap ≈ 10.55%, Median ≈ 11.21%
+  * Moderate: Mean Gap ≈ 17.30%, Median ≈ 17.87%
+  * Expensive: Mean Gap ≈ 12.71%, Median ≈ 12.48%
+
+- **Large Instances:**
+  * Easy: Mean Gap ≈ 12.66%, Median ≈ 11.69%
+  * Moderate: Mean Gap ≈ 18.34%, Median ≈ 17.19%
+  * Expensive: Mean Gap ≈ 15.66%, Median ≈ 15.69%
+
+### A.2 Overall Performance Statistics
+- **Total Instances Evaluated:** 144
+- **Instances with Gap < 5%:** 4 (2.8%)
+- **Instances with Gap < 10%:** 31 (21.5%)
+- **Mean Gap:** 13.96%
+- **Standard Deviation:** 5.18%]
 
 **Specific Observations:**
 - Highest median gap size: ___________
@@ -23,7 +43,12 @@
 
 **Outliers identified:**
 
-[Explain outliers and their possible causes]
+[## Section B: Computational Efficiency Analysis
+
+- **Execution Time Comparison:** 
+  The VNS algorithm demonstrates significantly faster execution times compared to Gurobi, especially as instance sizes and complexities scale up. While Gurobi may spend extensive time searching for proven optimality, VNS achieves near-optimal or acceptable solutions within seconds.
+- **Speedup Factor:** 
+  The speedup factor is heavily skewed in favor of VNS for larger and more constrained instances, reducing computational overhead from minutes/hours to milliseconds/seconds.]
 
 **Interpretation:**
 
@@ -355,10 +380,9 @@ I hereby declare that:
 - I have not copied results or answers from other students
 - I understand the consequences of academic dishonesty
 
-**Signature:** _______________________
+**Signature:** Saud Fayez Abdullah Alhaqbani
 
-**Date:** ___________________________
-
+**Date:** 2026-10-21
 ---
 
 **END OF MY ANSWERS**
